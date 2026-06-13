@@ -8,11 +8,20 @@
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
+@font-face {
+    font-family: 'DanganFont';
+    src: url('/resources/fonts/platform_eight.ttf') format('truetype');
+}
+
+.ft-dangan { font-family: 'DanganFont'; }
+
 .vertical-navbar {
+    position: sticky;
+    top: 0;
     width: 85%;
     height: 100vh;
     background-color: black;
-    border-right: solid 1px #3f0d12;
+    border-right: solid 1px #3F0D12;
 }
 
 .navbar-icons-container {
@@ -40,8 +49,63 @@
         max-width: unset;
     }
 
-    i {
+    * {
         display: table;
-        margin: 0 auto;
+        margin: 5px auto;
+    }
+}
+
+.feed-style{
+    border: 2px dashed #D62246;
+    margin-top: 12em !important;
+    margin-bottom: 4em;
+    border-radius: 10px;
+    background-color: #011C27;
+}
+
+.my_image {
+    position: absolute;
+    top: 100px;
+    padding: 2px;
+    margin-left: 25px;
+    background-color: #011C27;
+    border-radius: 50%;
+    border: 2px solid #D62246;
+}
+
+.panel-box {
+    margin-bottom: 25px;
+    border: 2px solid #8B182C;
+    border-radius: 10px;
+
+    p {
+        text-align: justify;
+
+        img {
+            display: inline;
+        }
+    }
+}
+
+.panel-encabezado {
+    background-color: #3F0D12;
+    padding: 5px 20px;
+    margin-bottom: unset;
+    font-size: 25px;
+    font-family: 'DanganFont';
+}
+
+.social-item {
+    color: white;
+    padding: 5px 0px;
+    font-size: 12px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #8a95a5;
+
+    &:hover {
+        border-bottom-color: white;
+        transition: border-bottom-color 0.3s;
     }
 }
