@@ -55,7 +55,7 @@
     }
 }
 
-.feed-style{
+.feed-style {
     border: 2px dashed #D62246;
     margin-top: 12em !important;
     margin-bottom: 4em;
@@ -95,7 +95,7 @@
     font-family: 'DanganFont';
 }
 
-.social-item {
+.data-item {
     color: white;
     padding: 5px 0px;
     font-size: 12px;
@@ -108,4 +108,67 @@
         border-bottom-color: white;
         transition: border-bottom-color 0.3s;
     }
+}
+
+.panel-title {
+    position: relative;
+    top: 10px;
+    left: 30px;
+    width: min-content;
+    height: 35px;
+
+    font-family: 'DanganFont';
+    padding: 0px 30px;
+    background-color: #011C27;
+    border: 2px solid #8B182C;
+    border-bottom: unset;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.skill-title {
+    margin-top: 35px;
+    font-family: monospace;
+}
+
+.last-update {
+    margin-left: 2em;
+    opacity: .6;
+    font-size: small;
+}
+
+.tech-skill {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-right: 8px;
+    padding: 5px;
+
+    background-color: #8a95a5;
+    border: 2px solid #606974;
+    border-radius: 10px;
+
+    img {
+        height: 18px;
+        margin-right: 6px;
+    }
+}
+
+.recreative-span {
+    padding: 0px 5px;
+    margin: 4px 3px;
+    font-size: 12px;
+
+    background-color: #8a95a5;
+    border: 2px solid #606974;
+    border-radius: 25px;
+}
+
+.swiper {
+    width: 600px;
+    height: 300px;
+}
+
+.swiper-wrapper {
+    transition-timing-function: linear !important;
 }
