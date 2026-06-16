@@ -7,23 +7,12 @@
     <link rel="shortcut icon" href="{{ asset('/img/webIcon.png') }}" type="image/x-icon">
     <title>{{ config('app.name') }}</title>
 
+    @vite('resources/css/navbar.css')
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
-    <script src="https://kit.fontawesome.com/abc15644b5.js" crossorigin="anonymous"></script>
-
-
+    
 </head>
-<style>
-    body {
-        background-image: url("{{ asset('/img/backGround.webp') }}");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        color: white;
-    }
-</style>
 
 <body>
 
@@ -280,30 +269,76 @@
 
                 <!-- Extras -->
                 <h3 class="panel-title">EXTRAS</h3>
-                <div class="panel-box p-3">
-
-
-                    <!-- Slider main container -->
+                <div class="panel-box p-3 mb-0">
                     <div class="swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">Slide 1</div>
-                        <div class="swiper-slide">Slide 2</div>
-                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <a href="https://open.spotify.com/playlist/2Lf6OGY7XlLzavLGYsEIbo?si=740a59cfe37e4c2e" target="_blank">
+                                        <img src="{{ asset('img/home/cards/Spotify.webp') }}" class="card-img-top" alt="Spotify">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mi playlist</h5>
+                                        <p class="card-text">
+                                            Pal que le interese el gusto mezclado de musica que tengo.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <a href="https://7tv.app/emotes" target="_blank">
+                                        <img src="{{ asset('img/home/cards/7tv.webp') }}" class="card-img-top" alt="7tv">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">7tv</h5>
+                                        <p class="card-text">
+                                            De aqui saque los emotes si te interesa buscar algunos pa tu pagina pues aqui encuentras mucho muy buenos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <a href="https://www.uvg.edu.gt/" target="_blank">
+                                        <img src="{{ asset('img/home/cards/UVG.webp') }}" class="card-img-top" alt="UVG">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Universidad del Valle</h5>
+                                        <p class="card-text">
+                                            La Universidad del Valle de Guatemala es una de las más prestigiosas universidades en Centroamérica.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <a href="https://www.twitch.tv/fapparamoar" target="_blank">
+                                        <img src="{{ asset('img/home/cards/FapParaMoar.webp') }}" class="card-img-top" alt="FapParaMoar">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">FapParaMoar</h5>
+                                        <p class="card-text">
+                                            Uno de los streamer que mas miro en mi día a día, aun que no interactuo mucho con la comunidad, pero si me se todo.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <a href="https://www.twitch.tv/tonny7" target="_blank">
+                                        <img src="{{ asset('img/home/cards/Tonny7.webp') }}" class="card-img-top" alt="Tonny7">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tonny7</h5>
+                                        <p class="card-text">
+                                            Otro de los streamer que mas miro, con ellos si interactuo bastante, me pueden encontrar en los vc del discord.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-
-                    <!-- If we need scrollbar -->
-                    <div class="swiper-scrollbar"></div>
-                    </div>
-
-
                 </div>
             </div>
 
@@ -448,7 +483,7 @@
                 </div>
 
                 <!-- Entretenimiento -->
-                <div class="panel-box">
+                <div class="panel-box mb-0">
                     <h5 class="panel-encabezado rounded-top-3">🎬 Entretenimiento</h5>
                     <img src="{{ asset('img/home/Entretenimiento.webp') }}" alt="Entretenimiento" width="100%">
                     <div class="p-2 d-flex flex-wrap justify-content-center">
@@ -473,7 +508,7 @@
                         <span class="recreative-span">El gato con botas</span>
                         <span class="recreative-span">Ratatuille</span>
                         <span class="recreative-span">Klaus</span>
-                        <span class="recreative-span">Licoris Recoild</span>
+                        <span class="recreative-span">Lycoris Recoild</span>
                         <span class="recreative-span">Blue Valentine</span>
                     </div>
                 </div>
@@ -484,6 +519,7 @@
     </div>
 
 </body>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>

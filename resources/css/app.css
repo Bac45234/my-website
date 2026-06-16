@@ -8,52 +8,7 @@
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-@font-face {
-    font-family: 'DanganFont';
-    src: url('/resources/fonts/platform_eight.ttf') format('truetype');
-}
 
-.ft-dangan { font-family: 'DanganFont'; }
-
-.vertical-navbar {
-    position: sticky;
-    top: 0;
-    width: 85%;
-    height: 100vh;
-    background-color: black;
-    border-right: solid 1px #3F0D12;
-}
-
-.navbar-icons-container {
-    width: min-content;
-}
-
-.navbar-icon {
-    display: block;
-    color: white !important;
-    font-size: 28px !important;
-    margin-top: 1.5em;
-    border-bottom: 2px solid transparent;
-    border-radius: 2px;
-
-    &:active {
-        border-color: transparent !important;
-    }
-
-    &:hover {
-        border-bottom-color: white;
-        transition: border-bottom-color 0.5s;
-    }
-
-    img {
-        max-width: unset;
-    }
-
-    * {
-        display: table;
-        margin: 5px auto;
-    }
-}
 
 .feed-style {
     border: 2px dashed #D62246;
@@ -164,11 +119,17 @@
     border-radius: 25px;
 }
 
-.swiper {
-    width: 600px;
-    height: 300px;
-}
+.swiper-slide { width: auto !important; }
+.swiper-wrapper { transition-timing-function: linear !important; }
 
-.swiper-wrapper {
-    transition-timing-function: linear !important;
+.card {
+    width: 225px;
+    height: 409px !important;
+
+    color: white !important;
+    background-color: var(--bs-secondary-color) !important;
+
+    p {
+        text-align: left;
+    }
 }
