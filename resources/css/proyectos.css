@@ -2,17 +2,17 @@ h1 {
     font-size: calc(3rem + 1vw) !important;
 }
 
-.proyect {
+.project {
     width: 350px;
     position: relative;
     overflow: hidden;
     
-    margin-right: 20px;
-    margin-bottom: 15px;
+    margin-right: 25px;
+    margin-bottom: 40px;
     border-radius: 15px;
     border: 2px solid #D62246;
 
-    img { width: 100%; }
+    > img { width: 100%; }
 
     &::after {
         content: '';
@@ -38,7 +38,7 @@ h1 {
 
 }
 
-.proyect-body {
+.project-body {
     position: absolute;
     bottom: 0;
     padding: 1rem;

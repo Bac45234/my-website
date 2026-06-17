@@ -11,7 +11,7 @@
                 </a>
                 <a href="/" class="navbar-icon" title="Inicio"><i class="fa-regular fa-house"></i></a>
                 <a href="/proyectos" class="navbar-icon" title="Proyectos"><i class="fa-solid fa-laptop"></i></a>
-                <a href="" class="navbar-icon" title="Trayecto académico"><i class="fa-regular fa-folder-open"></i></a>
+                <!-- <a href="" class="navbar-icon" title="Trayecto académico"><i class="fa-regular fa-folder-open"></i></a> -->
             </div>
         </div>
     </div>
