@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="{{ asset('img/webIcon.png') }}" type="image/x-icon">
     <title>Proyectos</title>
 
-    @vite(['resources/css/navbar.css', 'resources/css/proyectos.css'])
+    @vite('resources/css/proyectos.css')
 </head>
 
 <body>
